@@ -15,7 +15,7 @@ scene("game", () => {
       sprite("pipe"),
       pos(width(), height() / 2 + offset + PIPE_GAP / 2),
       "pipe",
-      scale(10),
+      scale(5),
       area(),
     ]);
 
@@ -23,7 +23,7 @@ scene("game", () => {
       sprite("pipe", { flipY: true }),
       pos(width(), height() / 2 + offset - PIPE_GAP / 2),
       origin("botleft"),
-      scale(10),
+      scale(5),
       "pipe",
       area(),
     ]);
@@ -31,8 +31,8 @@ scene("game", () => {
 
   onUpdate("pipe", (pipe) => {
     pipe.move(-160, 0);
-  })
-  loop(1.5, () => {
+  });
+  loop(5.5, () => {
     producePipes();
   });
   const player = add([
