@@ -6,10 +6,8 @@ loadSprite("pipe", "sprites/pipe.png");
 loadSprite("bg", "sprites/bg.png");
 
 scene("game", () => {
-  
-
   add([sprite("pipe", { width: width(), height: height() })]);
-//comentario das
+  //comentario das
   const PIPE_GAP = 120;
   function producePipes() {
     const offset = rand(-64, 64);
@@ -34,8 +32,6 @@ scene("game", () => {
       producePipes();
     });
   }
-
-  producePipes();
 
   const player = add([
     sprite("birdy"),
