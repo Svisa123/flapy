@@ -29,7 +29,7 @@ scene("game", () => {
 
   onUpdate("pipe", (pipe) => {
     pipe.move(-160, 0);
-  });
+  })
   loop(1.5, () => {
     producePipes();
   });
