@@ -21,7 +21,7 @@ scene("game", () => {
 
     add([
       sprite("pipe", { flipY: true }),
-      pos(width(), height() / 4 + offset - PIPE_GAP / 4),
+      pos(width(), height() / 2 + offset - PIPE_GAP / 2),
       origin("botleft"),
       scale(7),
       "pipe",
