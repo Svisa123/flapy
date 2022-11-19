@@ -13,17 +13,17 @@ scene("game", () => {
     const offset = rand(-64, 64);
     add([
       sprite("pipe"),
-      pos(width(), height() / 2 + offset + PIPE_GAP / 2),
+      pos(width(), height() / 4 + offset + PIPE_GAP / 4),
       "pipe",
-      scale(5),
+      scale(7),
       area(),
     ]);
 
     add([
       sprite("pipe", { flipY: true }),
-      pos(width(), height() / 2 + offset - PIPE_GAP / 2),
+      pos(width(), height() / 4 + offset - PIPE_GAP / 4),
       origin("botleft"),
-      scale(5),
+      scale(7),
       "pipe",
       area(),
     ]);
