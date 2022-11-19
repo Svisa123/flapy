@@ -35,7 +35,7 @@ scene("game", () => {
 
   const player = add([
     sprite("birdy"),
-    scale(2),
+    scale(4),
     pos(80, 40),
     area(),
     body(),
