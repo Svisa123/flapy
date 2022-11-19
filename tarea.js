@@ -11,17 +11,11 @@ scene("game", () => {
   const PIPE_GAP = 120;
   function producePipes() {
     const offset = rand(-64, 64);
-    add([
-      sprite("pipe"),
-      pos(width(), height() / 4 + offset + PIPE_GAP / 4),
-      "pipe",
-      scale(7),
-      area(),
-    ]);
+    add([sprite("pipe"), pos(width(), 0), "pipe", scale(7), area()]);
 
     add([
       sprite("pipe", { flipY: true }),
-      pos(width(), height() / 2 + offset - PIPE_GAP / 2),
+      pos(width(), height()),
       origin("botleft"),
       scale(7),
       "pipe",
