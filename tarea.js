@@ -25,14 +25,14 @@ scene("game", () => {
       "pipe",
       area(),
     ]);
-    onUpdate("pipe", (pipe) => {
-      pipe.move(-160, 0);
-    });
-    loop(1.5, () => {
-      producePipes();
-    });
   }
 
+  onUpdate("pipe", (pipe) => {
+    pipe.move(-160, 0);
+  });
+  loop(1.5, () => {
+    producePipes();
+  });
   const player = add([
     sprite("birdy"),
     scale(4),
