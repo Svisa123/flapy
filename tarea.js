@@ -6,7 +6,7 @@ loadSprite("pipe", "sprites/pipe.png");
 loadSprite("bg", "sprites/bg.png");
 
 scene("game", () => {
-  add([sprite("pipe", { width: width(), height: height() })]);
+  add([sprite("bg", { width: width(), height: height() })]);
   //comentario das
   const PIPE_GAP = 120;
   function producePipes() {
